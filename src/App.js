@@ -17,13 +17,13 @@ const App = () => {
   return (
     <div className="boxes">
       <div className="box">
-        {/* <Header /> */}
+        <Header />
         <AddedFeatures />
       </div>
-      {/* <div className="box">
+      <div className="box">
         <AdditionalFeatures />
         <Total />
-      </div> */}
+      </div>
     </div>
   );
 };

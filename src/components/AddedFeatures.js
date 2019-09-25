@@ -23,8 +23,6 @@ const AddedFeatures = props => {
   );
 };
 
-// export default AddedFeatures;
-
 const mapStateToProps = state => {
   return { carFromProps: state.AddedFeaturesReducer.car };
 };
