@@ -10,9 +10,9 @@ const AddedFeatures = props => {
   return (
     <div className="content">
       <h6>Added features:</h6>
-      {props.car.features.length ? (
+      {props.carFromProps.features.length ? (
         <ol type="1">
-          {props.car.features.map(item => (
+          {props.carFromProps.features.map(item => (
             <AddedFeature key={item.id} feature={item} />
           ))}
         </ol>
@@ -26,7 +26,7 @@ const AddedFeatures = props => {
 // export default AddedFeatures;
 
 const mapStateToProps = state => {
-  return { carFromProps: state.carFromProps.car };
+  return { carFromProps: state.AddedFeaturesReducer.car };
 };
 
 export default connect(
