@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import AdditionalFeature from "./AdditionalFeature";
-import { updateAdditionalFeaturesActionCreator } from "../actions/index.js";
+import { addFeatureActionCreator } from "../actions/index.js";
 
 const AdditionalFeatures = props => {
   return (
@@ -31,5 +31,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { updateAdditionalFeatures: updateAdditionalFeaturesActionCreator }
+  { addFeature: addFeatureActionCreator }
 )(AdditionalFeatures);

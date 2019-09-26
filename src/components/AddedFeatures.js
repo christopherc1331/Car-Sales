@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import AddedFeature from "./AddedFeature";
-import { updateCarFeaturesActionCreator } from "../actions/index.js";
+import { removeFeatureActionCreator } from "../actions/index.js";
 
 const AddedFeatures = props => {
   console.log(props);
@@ -29,5 +29,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { updateCarFeatures: updateCarFeaturesActionCreator }
+  { removeFeature: removeFeatureActionCreator }
 )(AddedFeatures);
