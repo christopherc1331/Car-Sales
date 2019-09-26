@@ -25,7 +25,7 @@ const AdditionalFeatures = props => {
 
 const mapStateToProps = state => {
   return {
-    storeFromProps: state.AdditionalFeaturesReducer.store
+    storeFromProps: state.CarReducer.store
   };
 };
 
